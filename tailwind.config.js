@@ -10,6 +10,13 @@ module.exports = {
       white: "#FFFFFF",
       darkGrey: "#242424",
     },
+    backdropFilter: {
+      blur: "blur(20px)",
+    },
+    borderRadius: {
+      "4xl": "65px",
+      full: "9999px",
+    },
   },
   plugins: [],
 };

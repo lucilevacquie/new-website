@@ -4,10 +4,10 @@ import Modal from "./modal";
 import "./index.css";
 
 const types = {
-  FRENCH: 0,
-  CONTACT: 1,
-  CAREER: 2,
-  HOBBIES: 3,
+  FRENCH: 1,
+  CONTACT: 2,
+  CAREER: 3,
+  HOBBIES: 4,
 };
 
 function App() {
@@ -16,25 +16,21 @@ function App() {
   const [content, setContent] = useState("");
 
   const displayContent = (active, type) => {
-    setIsActive(active);
+    setIsActive(active ? type : false);
 
     if (!active) return;
 
     // display here
     if (type === types.FRENCH) {
-      console.log(types.FRENCH);
       setTitle("I'm French and that's okay");
       setContent("Some content here");
     } else if (type === types.CAREER) {
-      console.log("cheese");
       setTitle("Software Engineer & Web Designer");
       setContent("Some content here");
     } else if (type === types.CONTACT) {
-      console.log("abakbfajkskd");
       setTitle("Contact me");
       setContent("Some content here");
     } else if (type === types.HOBBIES) {
-      console.log("hobs");
       setTitle("My Hobbies");
       setContent("Some content here");
     }
@@ -49,13 +45,14 @@ function App() {
               icon="fa-croissant"
               delay={0}
               type={types.FRENCH}
+              isActive={isActive === types.FRENCH}
               setIsActive={displayContent}
             />
             <Circle
-              type="contact"
               icon="fa-paper-plane"
               delay={1.2}
               type={types.CONTACT}
+              isActive={isActive === types.CONTACT}
               setIsActive={displayContent}
             />
           </div>
@@ -67,17 +64,23 @@ function App() {
               icon="fa-square-terminal"
               delay={0.4}
               type={types.CAREER}
+              isActive={isActive === types.CAREER}
               setIsActive={displayContent}
             />
             <Circle
               icon="fa-hand-holding-seedling"
               delay={0.8}
               type={types.HOBBIES}
+              isActive={isActive === types.HOBBIES}
               setIsActive={displayContent}
             />
           </div>
         </div>
-        {isActive && <Modal title={title} text={content} />}
+        <div className="absolute top-0 p-16 flex justify-center items-center h-screen w-screen">
+          {isActive && (
+            <Modal isActive={isActive} title={title} text={content} />
+          )}
+        </div>
       </div>
     </div>
   );

@@ -1,12 +1,19 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const Circle = ({ icon, delay, type, setIsActive }) => {
+function classNames(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
+
+const Circle = ({ icon, delay, type, setIsActive, isActive }) => {
+  console.log(isActive);
   return (
     <div
-      className="flex justify-center items-center"
-      onMouseEnter={() => setIsActive(true, type)}
-      onMouseLeave={() => setIsActive(false)}
+      onClick={() => setIsActive(!isActive, type)}
+      className={classNames(
+        isActive ? "z-50" : "z-10",
+        "flex justify-center items-center"
+      )}
     >
       <motion.div
         animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.6, 0.3] }}
