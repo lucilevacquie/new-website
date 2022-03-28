@@ -5,8 +5,8 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-const Circle = ({ icon, delay, type, setIsActive, isActive }) => {
-  console.log(isActive);
+const Circle = ({ icon, delay, type, setIsActive, isActive, isAllActive }) => {
+  console.log(isAllActive);
   return (
     <div
       onClick={() => setIsActive(!isActive, type)}
@@ -16,12 +16,26 @@ const Circle = ({ icon, delay, type, setIsActive, isActive }) => {
       )}
     >
       <motion.div
-        animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.6, 0.3] }}
-        transition={{ delay, repeat: Infinity, repeatDelay: 4 }}
-        whileHover={{ scale: 1.2, opacity: 0.6 }}
-        className="bg-white opacity-30 rounded-full h-32 w-32"
+        animate={{
+          scale: [1, 1.2, 1],
+          opacity: [0.3, 0.6, 0.3],
+        }}
+        key={`${type}_${isAllActive}`}
+        initial={!isAllActive}
+        transition={{
+          delay: 2 + delay,
+          repeat: Infinity,
+          repeatDelay: 4,
+        }}
+        className="bg-white rounded-full h-24 w-24 sm:h-32 sm:w-32"
       ></motion.div>
-      <i className={`absolute fa-regular ${icon} text-3xl text-darkGrey`}></i>
+      {isActive ? (
+        <i
+          className={`absolute fa-regular fa-xmark text-3xl text-darkGrey`}
+        ></i>
+      ) : (
+        <i className={`absolute fa-regular ${icon} text-3xl text-darkGrey`}></i>
+      )}
     </div>
   );
 };
