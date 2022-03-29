@@ -49,7 +49,6 @@ function App() {
       setTitle("Full Stack Developer");
       setContent(
         <div className="flex flex-col space-y-2 sm:space-y-8 sm:text-lg font-medium">
-          <p>I have a (decorative) Master Degree in Biology & Nutrition.</p>
           <p>
             During the 2020 lockdown, I started to learn about coding and
             unexpectedly realised I liked it!
@@ -59,7 +58,7 @@ function App() {
             April 2021.
           </p>
           <p>
-            Since then, I found myself enjoying dev's jokes and dreaming about
+            Since then, I found myself enjoying dev jokes and dreaming about
             lines of code.
           </p>
           <p>
@@ -115,7 +114,26 @@ function App() {
       );
     } else if (type === types.HOBBIES) {
       setTitle("My Hobbies");
-      setContent("Some content here");
+      setContent(
+        <div className="flex flex-col space-y-2 sm:space-y-8 sm:text-lg font-medium">
+          <p>
+            When I am not working, I do everything else! It's mission impossible
+            for me to stay still, except when there is a new season of the
+            Witcher on Netflix.
+          </p>
+          <p>
+            Gardening brings me peace and satisfaction, especially when my
+            plants actually grow.
+          </p>
+          <p>
+            I enjoy home staging, DIY and painting canvas to decorate my home.
+            Charity shops and flee markets are Heaven for me, I love upcycling
+            and try as much as I can to buy second hand.
+          </p>
+          <p></p>
+          <p></p>
+        </div>
+      );
     }
   };
 
