@@ -31,7 +31,7 @@ function App() {
           <p>I grew up in Brest, Brittany on the West coast of France.</p>
           <p>
             I can anticipate the most asked question so here is my answer: No, I
-            don’t eat frogs or snails (or on very rare occasions).
+            don’t eat frogs or snails (well, maybe... On very rare occasions).
           </p>
           <p>I used to be a food engineer in an ice cream factory.</p>
           <p>
@@ -41,7 +41,11 @@ function App() {
           <p>
             Since then, I have learnt to like beans on toast and pies, to start
             a polite conversation by commenting the weather and I sometimes
-            surprise myself by saying “It’s mint!”.
+            surprise myself by saying “
+            <span className="text-darkGreen font-bold text-lg sm:text-2xl">
+              It’s mint!
+            </span>
+            ”.
           </p>
         </div>
       );
@@ -51,23 +55,45 @@ function App() {
         <div className="flex flex-col space-y-2 sm:space-y-8 sm:text-lg font-medium">
           <p>
             During the 2020 lockdown, I started to learn about coding and
-            unexpectedly realised I liked it!
+            realised I like it!
           </p>
           <p>
-            I started my apprenticeship at Reach Studios Ltd in Sheffield in
-            April 2021.
+            I started my apprenticeship at{" "}
+            <a
+              href="https://reachstudios.co.uk/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-darkGreen"
+            >
+              Reach Studios Ltd
+            </a>{" "}
+            in Sheffield in April 2021.
           </p>
           <p>
             Since then, I found myself enjoying dev jokes and dreaming about
             lines of code.
           </p>
           <p>
-            I am mainly using React.js, Laravel with Livewire and Alpine.js,
-            coupled with Tailwind CSS (please see my CV for more details).
+            I am mainly using{" "}
+            <span className="font-bold text-lg sm:text-xl">React.js</span>,{" "}
+            <span className="font-bold text-lg sm:text-xl">Laravel</span> with
+            Livewire and Alpine.js, coupled with{" "}
+            <span className="font-bold text-lg sm:text-xl">Tailwind CSS</span>{" "}
+            (please see my{" "}
+            <a
+              href="resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="text-darkGreen"
+            >
+              resume
+            </a>{" "}
+            for more details).
           </p>
           <p>
             Alongside web development, I have a passion for web and graphic
-            design. I have been enhancing my skills on Adobe XD and Figma.
+            design. I had the opportunity to create several designs using Adobe
+            XD.
           </p>
         </div>
       );
@@ -75,12 +101,15 @@ function App() {
       setTitle("If you want to say hi");
       setContent(
         <div className="flex flex-col space-y-2 sm:space-y-8 sm:text-lg font-medium">
-          <p>Please contact me here:</p>
-          <a className="text-darkGreen" href="mailto:lucile.vacquie@gmail.com">
+          <p>You can contact me here:</p>
+          <a
+            className="text-darkGreen sm:text-4xl"
+            href="mailto:lucile.vacquie@gmail.com"
+          >
             lucile.vacquie@gmail.com
           </a>
-          <p>Or if you're a bit shy:</p>
-          <div className="flex space-x-4 sm:space-x-8 text-lg sm:text-2xl">
+          <p>Or if you're a bit curious:</p>
+          <div className="flex space-x-4 sm:space-x-8 text-lg sm:text-4xl">
             <a
               href="https://www.linkedin.com/in/lucile-vacqui%C3%A929/"
               target="_blank"
@@ -103,13 +132,14 @@ function App() {
               <i className="fa-brands fa-github text-darkGreen"></i>
             </a>
             <a
-              href="https://github.com/lucilevacquie"
+              href="https://www.freecodecamp.org/lucile-vacquie"
               target="_blank"
               rel="noreferrer"
             >
               <i class="fa-brands fa-free-code-camp text-darkGreen"></i>
             </a>
           </div>
+          <p>Thanks for stopping by and have a great day!</p>
         </div>
       );
     } else if (type === types.HOBBIES) {
@@ -117,7 +147,7 @@ function App() {
       setContent(
         <div className="flex flex-col space-y-2 sm:space-y-8 sm:text-lg font-medium">
           <p>
-            When I am not working, I do everything else! It's mission impossible
+            When I'm not working, I do everything else! It's mission impossible
             for me to stay still, except when there is a new season of the
             Witcher on Netflix.
           </p>
@@ -127,11 +157,18 @@ function App() {
           </p>
           <p>
             I enjoy home staging, DIY and painting canvas to decorate my home.
-            Charity shops and flee markets are Heaven for me, I love upcycling
+            Charity shops and flee markets are Heaven for me. I love upcycling
             and try as much as I can to buy second hand.
           </p>
-          <p></p>
-          <p></p>
+          <p>
+            Books are always my favourite companions. Add to it a wood burner
+            and a cup of tea and I will probably be lost for a few hours.
+          </p>
+          <p>
+            Of all things, my absolute favourite activity is travelling. I had
+            the chance to discover a few places around the globe already but I
+            don't intend to stop there!
+          </p>
         </div>
       );
     }
@@ -159,9 +196,9 @@ function App() {
               isAllActive={isAllActive}
             />
           </div>
-          <div className="text-darkGreen text-xl pt-24 sm:pt-0 sm:text-3xl font-bold">
+          <h1 className="text-darkGreen text-xl pt-24 sm:pt-0 sm:text-3xl font-bold">
             Hi there, <br /> I'm Lucile
-          </div>
+          </h1>
           <div className="flex flex-col justify-between">
             <Circle
               icon="fa-square-terminal"

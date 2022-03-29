@@ -19,6 +19,7 @@ module.exports = {
       darkGreen: "#0D7263",
       white: "#FFFFFF",
       darkGrey: "#242424",
+      mint: "#61BAAC",
     },
     backdropFilter: {
       blur: "blur(20px)",
