@@ -100,16 +100,16 @@ function App() {
     } else if (type === types.CONTACT) {
       setTitle("If you want to say hi");
       setContent(
-        <div className="flex flex-col space-y-2 sm:space-y-8 sm:text-lg font-medium">
+        <div className="flex flex-col space-y-4 sm:space-y-8 sm:text-lg font-medium">
           <p>You can contact me here:</p>
           <a
-            className="text-darkGreen sm:text-4xl"
+            className="text-darkGreen text-xl sm:text-4xl"
             href="mailto:lucile.vacquie@gmail.com"
           >
             lucile.vacquie@gmail.com
           </a>
           <p>Or if you're a bit curious:</p>
-          <div className="flex space-x-4 sm:space-x-8 text-lg sm:text-4xl">
+          <div className="flex space-x-8 text-4xl">
             <a
               href="https://www.linkedin.com/in/lucile-vacqui%C3%A929/"
               target="_blank"
@@ -148,8 +148,8 @@ function App() {
         <div className="flex flex-col space-y-2 sm:space-y-8 sm:text-lg font-medium">
           <p>
             When I'm not working, I do everything else! It's mission impossible
-            for me to stay still, except when there is a new season of the
-            Witcher on Netflix.
+            for me to stay still, except when there is a new season of{" "}
+            <span className="italic">The Witcher</span> on Netflix.
           </p>
           <p>
             Gardening brings me peace and satisfaction, especially when my
