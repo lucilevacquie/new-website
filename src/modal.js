@@ -15,9 +15,9 @@ const Modal = ({ title, text, isActive }) => {
         exit={{ opacity: 0 }}
         className={classNames(
           isActive ? "pointer-events-auto" : "pointer-events-none",
-          "overflow-scroll z-30 pt-24 px-8 pb-8 sm:py-12 sm:px-48 h-full w-full bg-white bg-opacity-25 bg-clip-padding rounded-small sm:rounded-large"
+          "overflow-scroll backdrop-filter backdrop-blur-lg z-30 pt-24 px-8 pb-8 sm:py-12 sm:px-48 h-full w-full bg-white bg-opacity-25 bg-clip-padding rounded-small sm:rounded-large"
         )}
-        style={{ backdropFilter: "blur(20px)" }}
+        // style={{ backdropFilter: "blur(20px)" }}
       >
         <h2 className="text-lg sm:text-3xl text-darkGreen font-bold mb-4 sm:mb-8">
           {title}
