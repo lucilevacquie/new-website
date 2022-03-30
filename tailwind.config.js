@@ -2,6 +2,7 @@ const colors = require("tailwindcss/colors");
 
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  enabled: process.env.NODE_ENV === "production",
   theme: {
     extend: {
       animation: {
