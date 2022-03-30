@@ -102,14 +102,14 @@ function App() {
       setTitle("If you want to say hi");
       setContent(
         <div className="flex flex-col space-y-4 sm:space-y-8 sm:text-lg font-medium">
-          <p>You can contact me here:</p>
+          <p>You can contact me at:</p>
           <a
             className="text-darkGreen text-xl sm:text-4xl"
             href="mailto:lucile.vacquie@gmail.com"
           >
             lucile.vacquie@gmail.com
           </a>
-          <p>Or if you're a bit curious:</p>
+          <p>Or find out more:</p>
           <div className="flex space-x-8 text-4xl">
             <a
               href="https://www.linkedin.com/in/lucile-vacqui%C3%A929/"
