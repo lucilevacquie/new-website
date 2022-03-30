@@ -13,6 +13,9 @@ module.exports = {
           "100%": { backgroundColor: theme("colors.transparent") },
         },
       }),
+      backdropFilter: {
+        modal: "20px",
+      },
     },
     colors: {
       yellow: "#FFD841",
