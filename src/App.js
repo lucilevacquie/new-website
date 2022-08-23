@@ -76,13 +76,16 @@ function App() {
           </p>
           <p>
             I am mainly using{" "}
-            <span className="font-bold text-lg sm:text-xl">React.js</span>,{" "}
-            <span className="font-bold text-lg sm:text-xl">Laravel</span> with
+            <span className="font-bold text-lg sm:text-xl">React.js</span>{" "} and {" "}
+            <span className="font-bold text-lg sm:text-xl">Next.js</span>{" "} as well as {" "}
+            <span className="font-bold text-lg sm:text-xl">WordPress</span>{" "} and {" "}
+            <span className="font-bold text-lg sm:text-xl">Shopify</span>{" "} (hosted and headless).
+            I have also worked with {" "}<span className="font-bold text-lg sm:text-xl">Laravel</span>,
             Livewire and Alpine.js, coupled with{" "}
             <span className="font-bold text-lg sm:text-xl">Tailwind CSS</span>{" "}
             (please see my{" "}
             <a
-              href="resume.pdf"
+              href="junior-front-end-dev.pdf"
               target="_blank"
               rel="noreferrer"
               className="text-darkGreen"
@@ -94,7 +97,7 @@ function App() {
           <p>
             Alongside web development, I have a passion for web and graphic
             design. I had the opportunity to create several designs using Adobe
-            XD.
+            XD and Figma.
           </p>
         </div>
       );
