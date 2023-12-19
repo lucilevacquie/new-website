@@ -51,18 +51,16 @@ function App() {
         </div>
       );
     } else if (type === types.CAREER) {
-      setTitle("Full Stack Developer");
+      setTitle("Front End Engineer");
       setContent(
         <div className="flex flex-col space-y-2 sm:space-y-8 sm:text-lg font-medium">
           <p>
-            During the 2020 lockdown, I started to learn about coding and
-            realised I like it!
+            I started to learn about coding during the 2020 lockdown.
           </p>
           <p>
             I started my apprenticeship at{" "}
             <a
               href="https://reachstudios.co.uk/"
-              target="_blank"
               rel="noreferrer"
               className="text-darkGreen"
             >
@@ -70,34 +68,33 @@ function App() {
             </a>{" "}
             in Sheffield in April 2021.
           </p>
-          <p>
-            Since then, I found myself enjoying dev jokes and dreaming about
-            lines of code.
+          <p>After over a year, I decided to explore new horizons and moved back
+            to Manchester where I started working at {" "}
+            <a
+              href="https://www.codecomputerlove.com/"
+              rel="noreferrer"
+              className="text-darkGreen"
+            >
+              Code Computerlove
+            </a>{" "} in October 2022.
           </p>
           <p>
             I am mainly using{" "}
-            <span className="font-bold text-lg sm:text-xl">React.js</span>{" "} and {" "}
-            <span className="font-bold text-lg sm:text-xl">Next.js</span>{" "} as well as {" "}
-            <span className="font-bold text-lg sm:text-xl">WordPress</span>{" "} and {" "}
-            <span className="font-bold text-lg sm:text-xl">Shopify</span>{" "} (hosted and headless).
-            I have also worked with {" "}<span className="font-bold text-lg sm:text-xl">Laravel</span>,
-            Livewire and Alpine.js, coupled with{" "}
-            <span className="font-bold text-lg sm:text-xl">Tailwind CSS</span>{" "}
-            (please see my{" "}
+            <span className="font-bold text-lg sm:text-xl">React</span>{" "} coupled with {" "}
+            <span className="font-bold text-lg sm:text-xl">TypeScript</span>{" "} within {" "}
+            <span className="font-bold text-lg sm:text-xl">NextJS</span>{" "} projects.
+            Lately, I have been using GraphQL queries to talk to CMS (Contentful, DatoCMS, WordPress).
+            Find all my skillset in my{" "}
             <a
-              href="junior-front-end-dev.pdf"
-              target="_blank"
+              href="cv-front-end-engineer.pdf"
               rel="noreferrer"
               className="text-darkGreen"
             >
               resume
-            </a>{" "}
-            for more details).
+            </a>.
           </p>
           <p>
-            Alongside web development, I have a passion for web and graphic
-            design. I had the opportunity to create several designs using Adobe
-            XD and Figma.
+            It as been an incredible journey so far and I had the chance to meet amazing people!
           </p>
         </div>
       );
@@ -116,28 +113,18 @@ function App() {
           <div className="flex space-x-8 text-4xl">
             <a
               href="https://www.linkedin.com/in/lucile-vacqui%C3%A929/"
-              target="_blank"
               rel="noreferrer"
             >
               <i className="fa-brands fa-linkedin text-darkGreen"></i>
             </a>
             <a
-              href="https://www.instagram.com/lucile_vcq/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="fa-brands fa-instagram text-darkGreen"></i>
-            </a>
-            <a
               href="https://github.com/lucilevacquie"
-              target="_blank"
               rel="noreferrer"
             >
               <i className="fa-brands fa-github text-darkGreen"></i>
             </a>
             <a
               href="https://www.freecodecamp.org/lucile-vacquie"
-              target="_blank"
               rel="noreferrer"
             >
               <i class="fa-brands fa-free-code-camp text-darkGreen"></i>

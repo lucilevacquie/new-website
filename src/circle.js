@@ -8,11 +8,11 @@ function classNames(...classes) {
 const Circle = ({ icon, delay, type, setIsActive, isActive, isAllActive }) => {
   console.log(isAllActive);
   return (
-    <div
+    <button
       onClick={() => setIsActive(!isActive, type)}
       className={classNames(
         isActive ? "z-50" : "z-10",
-        "flex justify-center items-center"
+        "flex justify-center items-center rounded-full focus-visible:outline-darkGrey"
       )}
     >
       <motion.div
@@ -36,7 +36,7 @@ const Circle = ({ icon, delay, type, setIsActive, isActive, isAllActive }) => {
       ) : (
         <i className={`absolute fa-regular ${icon} text-3xl text-darkGrey`}></i>
       )}
-    </div>
+    </button>
   );
 };
 
