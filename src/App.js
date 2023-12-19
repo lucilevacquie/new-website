@@ -32,9 +32,9 @@ function App() {
           <p>I grew up in Brest, Brittany on the West coast of France.</p>
           <p>
             I can anticipate the most asked question so here is my answer: No, I
-            don’t eat frogs or snails (well, maybe... On very rare occasions).
+            don’t eat frogs or snails (well sometimes... on very rare occasions).
           </p>
-          <p>I used to be a food engineer in an ice cream factory.</p>
+          <p>Fun fact: I used to be a food engineer in an ice cream factory.</p>
           <p>
             I moved to England in February 2019 as an au pair in a lovely family
             of Chorlton-Cum-Hardy, Manchester.
@@ -58,7 +58,7 @@ function App() {
             I started to learn about coding during the 2020 lockdown.
           </p>
           <p>
-            I started my apprenticeship at{" "}
+            I started my career at{" "}
             <a
               href="https://reachstudios.co.uk/"
               rel="noreferrer"
@@ -94,7 +94,7 @@ function App() {
             </a>.
           </p>
           <p>
-            It as been an incredible journey so far and I had the chance to meet amazing people!
+            It has been an incredible journey so far and I had the chance to meet amazing people!
           </p>
         </div>
       );
