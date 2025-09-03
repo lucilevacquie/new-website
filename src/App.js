@@ -32,7 +32,8 @@ function App() {
           <p>I grew up in Brest, Brittany on the West coast of France.</p>
           <p>
             I can anticipate the most asked question so here is my answer: No, I
-            don’t eat frogs or snails (well sometimes... on very rare occasions).
+            don’t eat frogs or snails (well sometimes... on very rare
+            occasions).
           </p>
           <p>Fun fact: I used to be a food engineer in an ice cream factory.</p>
           <p>
@@ -54,9 +55,7 @@ function App() {
       setTitle("Front End Engineer");
       setContent(
         <div className="flex flex-col space-y-2 sm:space-y-8 sm:text-lg font-medium">
-          <p>
-            I started to learn about coding during the 2020 lockdown.
-          </p>
+          <p>I started to learn about coding during the 2020 lockdown.</p>
           <p>
             I started my career at{" "}
             <a
@@ -68,33 +67,41 @@ function App() {
             </a>{" "}
             in Sheffield in April 2021.
           </p>
-          <p>After over a year, I decided to explore new horizons and moved back
-            to Manchester where I started working at {" "}
+          <p>
+            After over a year, I decided to explore new horizons and moved back
+            to Manchester where I started working at{" "}
             <a
               href="https://www.codecomputerlove.com/"
               rel="noreferrer"
               className="text-darkGreen"
             >
               Code Computerlove
-            </a>{" "} in October 2022.
+            </a>{" "}
+            in October 2022.
           </p>
           <p>
             I am mainly using{" "}
-            <span className="font-bold text-lg sm:text-xl">React</span>{" "} coupled with {" "}
-            <span className="font-bold text-lg sm:text-xl">TypeScript</span>{" "} within {" "}
-            <span className="font-bold text-lg sm:text-xl">NextJS</span>{" "} projects.
-            Lately, I have been using GraphQL queries to talk to CMS (Contentful, DatoCMS, WordPress).
-            Find all my skillset in my{" "}
+            <span className="font-bold text-lg sm:text-xl">React</span> coupled
+            with{" "}
+            <span className="font-bold text-lg sm:text-xl">TypeScript</span>. I
+            have been using
+            <span className="font-bold text-lg sm:text-xl">GraphQL</span> to
+            link our{" "}
+            <span className="font-bold text-lg sm:text-xl">NextJS</span>{" "}
+            projects to their CMS (Contentful, DatoCMS, WordPress). Find all my
+            skillset in my{" "}
             <a
-              href="cv-front-end-engineer.pdf"
+              href="cv-lucile-vacquie.pdf"
               rel="noreferrer"
               className="text-darkGreen"
             >
               resume
-            </a>.
+            </a>
+            .
           </p>
           <p>
-            It has been an incredible journey so far and I had the chance to meet amazing people!
+            It has been an incredible journey so far and I had the chance to
+            meet amazing people!
           </p>
         </div>
       );
@@ -117,10 +124,7 @@ function App() {
             >
               <i className="fa-brands fa-linkedin text-darkGreen"></i>
             </a>
-            <a
-              href="https://github.com/lucilevacquie"
-              rel="noreferrer"
-            >
+            <a href="https://github.com/lucilevacquie" rel="noreferrer">
               <i className="fa-brands fa-github text-darkGreen"></i>
             </a>
             <a
@@ -138,9 +142,8 @@ function App() {
       setContent(
         <div className="flex flex-col space-y-2 sm:space-y-8 sm:text-lg font-medium">
           <p>
-            When I'm not working, I do everything else! It's mission impossible
-            for me to stay still, except when there is a new season of{" "}
-            <span className="italic">The Witcher</span> on Netflix.
+            When I'm not working, I love to spend quality time with my family
+            and play silly games with my daughter.
           </p>
           <p>
             Gardening brings me peace and satisfaction, especially when my
@@ -152,8 +155,8 @@ function App() {
             and try as much as I can to buy second hand.
           </p>
           <p>
-            Books are always my favourite companions. Add to it a wood burner
-            and a cup of tea and I will probably be lost for a few hours.
+            After my family, books are my favourite companions. Add to it a wood
+            burner and a cup of tea and I will probably be lost for a few hours.
           </p>
           <p>
             Of all things, my absolute favourite activity is travelling. I had
