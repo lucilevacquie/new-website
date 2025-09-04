@@ -28,7 +28,7 @@ function App() {
     if (type === types.FRENCH) {
       setTitle("I'm French and that's okay");
       setContent(
-        <div className="flex flex-col space-y-2 sm:space-y-8 sm:text-lg font-medium">
+        <div className="flex flex-col space-y-2 sm:space-y-8 sm:text-xl font-medium">
           <p>I grew up in Brest, Brittany on the West coast of France.</p>
           <p>
             I can anticipate the most asked question so here is my answer: No, I
@@ -54,7 +54,7 @@ function App() {
     } else if (type === types.CAREER) {
       setTitle("Front End Engineer");
       setContent(
-        <div className="flex flex-col space-y-2 sm:space-y-8 sm:text-lg font-medium">
+        <div className="flex flex-col space-y-2 sm:space-y-8 sm:text-xl font-medium">
           <p>I started to learn about coding during the 2020 lockdown.</p>
           <p>
             I started my career at{" "}
@@ -84,7 +84,7 @@ function App() {
             <span className="font-bold text-lg sm:text-xl">React</span> coupled
             with{" "}
             <span className="font-bold text-lg sm:text-xl">TypeScript</span>. I
-            have been using
+            have been using{" "}
             <span className="font-bold text-lg sm:text-xl">GraphQL</span> to
             link our{" "}
             <span className="font-bold text-lg sm:text-xl">NextJS</span>{" "}
@@ -108,7 +108,7 @@ function App() {
     } else if (type === types.CONTACT) {
       setTitle("If you want to say hi");
       setContent(
-        <div className="flex flex-col space-y-4 sm:space-y-8 sm:text-lg font-medium">
+        <div className="flex flex-col space-y-4 sm:space-y-8 sm:text-xl font-medium">
           <p>You can contact me at:</p>
           <a
             className="text-darkGreen text-xl sm:text-4xl"
@@ -140,7 +140,7 @@ function App() {
     } else if (type === types.HOBBIES) {
       setTitle("My Hobbies");
       setContent(
-        <div className="flex flex-col space-y-2 sm:space-y-8 sm:text-lg font-medium">
+        <div className="flex flex-col space-y-2 sm:space-y-8 sm:text-xl font-medium">
           <p>
             When I'm not working, I love to spend quality time with my family
             and play silly games with my daughter.
