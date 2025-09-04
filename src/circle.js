@@ -1,12 +1,19 @@
-import React from "react";
 import { motion } from "framer-motion";
+import "./index.css";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-const Circle = ({ icon, delay, type, setIsActive, isActive, isAllActive }) => {
-  console.log(isAllActive);
+const Circle = ({
+  icon,
+  delay,
+  type,
+  setIsActive,
+  isActive,
+  isAllActive,
+  ariaLabel,
+}) => {
   return (
     <button
       onClick={() => setIsActive(!isActive, type)}
@@ -14,7 +21,11 @@ const Circle = ({ icon, delay, type, setIsActive, isActive, isAllActive }) => {
         isActive ? "z-50" : "z-10",
         "flex justify-center items-center rounded-full focus-visible:outline-darkGrey"
       )}
+      type="button"
     >
+      <p className="visuallyHidden">
+        {isActive ? "Close modal" : `${ariaLabel}`}
+      </p>
       <motion.div
         animate={{
           scale: [1, 1.2, 1],

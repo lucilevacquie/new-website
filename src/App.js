@@ -180,6 +180,7 @@ function App() {
               isActive={isActive === types.FRENCH}
               setIsActive={displayContent}
               isAllActive={isAllActive}
+              ariaLabel="About me"
             />
             <Circle
               icon="fa-paper-plane"
@@ -188,6 +189,7 @@ function App() {
               isActive={isActive === types.CONTACT}
               setIsActive={displayContent}
               isAllActive={isAllActive}
+              ariaLabel="Contact me"
             />
           </div>
           <h1 className="text-darkGreen text-xl pt-24 sm:pt-0 sm:text-3xl font-bold">
@@ -201,6 +203,7 @@ function App() {
               isActive={isActive === types.CAREER}
               setIsActive={displayContent}
               isAllActive={isAllActive}
+              ariaLabel="My career"
             />
             <Circle
               icon="fa-hand-holding-seedling"
@@ -209,6 +212,7 @@ function App() {
               isActive={isActive === types.HOBBIES}
               setIsActive={displayContent}
               isAllActive={isAllActive}
+              ariaLabel="My hobbies"
             />
           </div>
         </div>
